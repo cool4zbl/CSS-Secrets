@@ -1,0 +1,22 @@
+{
+  "name": "css-secrets-doodles",
+  "version": "1.0.0",
+  "description": "#### Some doodles from [CSS Secrets](https://www.amazon.com/CSS-Secrets-Solutions-Everyday-Problems/dp/1449372635/ref=sr_1_1?ie=UTF8&qid=1478652573&sr=8-1&keywords=css+secrets)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cool4zbl/CSS-Secrets.git"
+  },
+  "keywords": [
+    "CSS"
+  ],
+  "author": "cool4zbl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cool4zbl/CSS-Secrets/issues"
+  },
+  "homepage": "https://github.com/cool4zbl/CSS-Secrets#readme"
+}

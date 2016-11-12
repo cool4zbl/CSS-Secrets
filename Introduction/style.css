@@ -1,0 +1,42 @@
+.btn.default {
+  padding: 6px 16px;
+  border: 1px solid #446d88;
+  background: #58a linear-gradient(#77a0bb, #58a);
+  border-radius: 4px;
+  box-shadow: 0 1px 5px gray;
+  color: white;
+  text-shadow: 0 -1px 1px #335166;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+button:nth-of-type(2) {
+  padding: .3em .8em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .2em;
+  box-shadow: 0 .05em .25em gray;
+  color: white;
+  text-shadow: 0 -.05em .0e5m #335166;
+  background: #58a linear-gradient(#77a0bb, #58a);
+  font-size: 125%;
+  line-height: 1.25;
+}
+
+button {
+  padding: .3em .8em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .2em;
+  box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+  color: white;
+  text-shadow: 0 -.05em .0e5m rgba(0,0,0,.5);
+  background: #58a linear-gradient(hsla(0, 0%, 100%, .2), transparent);
+  font-size: 125%;
+  line-height: 1.25;
+}
+button.ok { background-color: #6b0;}
+button.cancel { background-color: #c00;}
+
+hr.current {
+  height: .5em;
+  background: currentColor;
+}
