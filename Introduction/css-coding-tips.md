@@ -1,6 +1,7 @@
-## CSS 编码技巧
+# CSS 编码技巧
 
-### 尽量减少代码重复 (DRY)
+## 尽量减少代码重复 (DRY)
+## Minimize code duplication
 
 - minimizing the amount of edits necessary to make a change.
 
@@ -98,6 +99,7 @@ currentColor 本身就是很多 CSS 颜色属性的初始值
   /* 设置超链接颜色与页面其他文本相同 */
   a { color: inherit; }
 ```
+
 ```CSS
   /* 设置伪元素背景、边框样式继承父元素 */
   .callout { position: relative; }
@@ -113,3 +115,35 @@ currentColor 本身就是很多 CSS 颜色属性的初始值
     transform: rotate(45deg);
   }
 ```
+
+## 相信你的眼睛，而不是数字
+- 字母形状在两端比较整齐，但顶部和底部则往往参差不齐。
+- 需要减少顶部和底部内边距，不一定非得绝对居中
+
+
+## 响应式
+- 每个媒介查询都会增加成本
+- 媒介查询不能以一种连续的方式来修复问题，它工作原理是基于某几个特定的阶梯（断点）
+- 样式和设计最好是用弹性布局
+- 使用百分比长度来取代固定长度
+- `background-size: cover` ，在移动端需要慎用
+- 为替换元素 img / object / video / iframe ... 设置一个 `max-width: 100%;`
+- 使用 `max-width` ，可以自适应分辨率
+- 行列式布局（grid），使用 flexbox 或者 `display: inline-block;` 加上常规的文本折行行为
+- 多列文本时，指定 `column-width` 而不是 `column-count` ，使它在较小屏幕下自动显示单列布局
+
+
+## 合理使用简写
+- 这是一种防御式编码方式，确保声明不会被覆盖
+- 「列表扩散」：如果只为某个属性提供一个值，它就会扩散并应用到列表中的每一项
+
+```CSS
+  background: url(1.png) top right,
+              url(2.png) bottom right,
+              url(3.png) bottom left,
+  background-size: 2em 2em;
+  background-repeat: no-repeat;
+```
+
+**Tips:** `background-size` `background-position` 同时存在时，最好使用 `/` 分隔声明，或者直接拆开。
+
