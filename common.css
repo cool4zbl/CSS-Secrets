@@ -1,7 +1,13 @@
 body {
   max-width: 100%;
 }
-h1.main__title { 
+.main__title { 
   font-size: 4em;
   color: #00C17F;
 }
+.main__title:not(:first-child) { 
+  border-top: .2em solid transparent;
+  border-image: 100% 0 0 linear-gradient(currentColor .5em, transparent 1em);
+  padding-top: .5em;
+}
+
