@@ -72,6 +72,14 @@
   }
 ```
 
+**Note**:
+自己写 CSS 的时候，定义不同 `button` 样式，
+才发现 `:nth-of-type()` 与 `nth-child()` 是有区别的。
+`button:nth-of-type(n)` 选择的是 `body` 下的第 n 个 button 元素.
+`button:nth-child(n)` 选择的是 `body` 下的第 n 个且类型是 button 的子元素。
+这里值得再好好研究 `nth-of-type` `nth-child` `nth-last-child` `nth-last-of-type`
+的区别
+
 - 代码量少和代码易维护不可兼得
 
 - `currentColor`
