@@ -27,4 +27,7 @@ dl:nth-of-type(3) dd + dd::before {
   font-weight: normal;
 }
 
+pre {
+  tab-size: 2;
+}
 
